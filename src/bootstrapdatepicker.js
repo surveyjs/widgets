@@ -18,7 +18,7 @@ function init(Survey, $) {
             return question.getType() === "bootstrapdatepicker";
         },
         htmlTemplate:
-            "<input class='form-control widget-datepicker' type='text' style='width: 100%;'>",
+            "<input class='form-control widget-datepicker' type='text' style='width: 100%;' readonly>",
         activatedByChanged: function (activatedBy) {
             Survey.JsonObject.metaData.addClass(
                 "bootstrapdatepicker",
